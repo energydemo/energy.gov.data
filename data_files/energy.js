@@ -144,12 +144,12 @@ Drupal.behaviors.searchFilters = {
 // Flex slider.
 Drupal.behaviors.flexSlider = {
   attach: function (context, settings) {
-    $('.flexslider').flexslider({
-      animation: "slide",
+    $('.flexslider').flexslider({
+      animation: "slide",
       slideshow: true,
       useCSS: false,
       touch: true
-    });
+    });
   }
 }
 
@@ -159,13 +159,13 @@ Drupal.behaviors.mapCover = {
     var $cover = $( '<div class="mapbox-cover">Interaction disabled.</div>' );
     var $coverToggle = $( '<div class="mapbox-cover-toggle"><a href="#">Enable Interactions</a></div>' );
     // For map heros, check if static map is using an iframe.
-    if ($('.node-full .energy-static-map iframe').length) {
+    if ($('.node-full .energy-static-map iframe').length) {
       $('.node-full .energy-static-map').append($cover).before($coverToggle);
     }
     else {
       $('.node-full .field-name-field-map-map > .field-items').append($cover);
-      $('.node-full .field-name-field-map-map').before($coverToggle);
-    }
+      $('.node-full .field-name-field-map-map').before($coverToggle);
+    }
     $('.mapbox-cover-toggle a').on("click",function( event ) {
       event.preventDefault();
       $('.mapbox-cover').toggle();
@@ -180,7 +180,7 @@ Drupal.behaviors.mapCover = {
 // Data Tables.
 Drupal.behaviors.dataTable = {
   attach: function (context, settings) {
-    if ($('.tablefield').length) {
+    if ($('.tablefield').length) {
       $('.tablefield').dataTable();
     }
   }
