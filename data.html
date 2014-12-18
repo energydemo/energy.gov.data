@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-g" media="all">
 <link type="text/css" rel="stylesheet" href="./data_files/css_g0fmN0jIIROLhnXMfTYduKBK8OAQLUDJ9ftKChBx93Q.css" media="all">
 <link type="text/css" rel="stylesheet" href="./data_files/1.css" media="all">
 <link type="text/css" rel="stylesheet" href="./data_files/css_Ikxyiam9LlL5S0J8fkX6pua8ZULAX3oQN5OPrzysRfg.css" media="all">
@@ -20,13 +19,18 @@ g" media="all">
   }
 </style>
 <style media="all">
+  .block-energy-social {
+  display: none;
+  }
+
   #search_input {
   border: solid 1px gray;
   font-size: 20px;
   padding: 8px;
-  width: 98%;
+  width: 96%;
   margin-bottom: 20px;
   }
+
   .visuallyhidden {
   display: none;
   }
@@ -323,15 +327,18 @@ g" media="all">
 
                               <div id="searchbox">
                                 <form role="search" method="get" id="searchform" action="http://catalog.data.gov/dataset" onsubmit="alert('submit'); return false;">
-	                          <label class="visuallyhidden" for="q">Search for:</label>
-	                          <input id="search_input" type="text" value="" name="q" id="q" x-webkit-speech="" placeholder="What type of data are you looking for?">
+
+                                  <input type="hidden" value="" id="search_output" name="q" />
+
+	                          <label class="visuallyhidden" for="doequery">Search for:</label>
+	                          <input id="search_input" type="text" value="" x-webkit-speech="" placeholder="What DOE data are you looking for?">
 	                          <input class="visuallyhidden" type="submit" id="searchsubmit" value="Search" class="button">
                                 </form>
                               </div>
 
                               <p>The Open Energy Data project is part of Department of Energy's <a href="http://energy.gov/data/articles/digital-strategy">Digital Strategy</a>, and is intended to improve access to DOE data. The result is a data catalog that is a continually-growing list of publicly available DOE datasets.</p>
 
-                              <p>In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America’s energy, environmental, and nuclear challenges.</p>
+                              <p>In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America's energy, environmental, and nuclear challenges.</p>
 
                               <h4><strong>Section</strong></h4>
 
@@ -495,12 +502,11 @@ _gaq.push(
 <script type="text/javascript">
     var fnAppendArgs = function() {
         var additionalArgs = ' AND (organization:eia-doe-gov OR organization:doe-gov OR organization:osti-gov)';
-        var txt = document.getElementById ('search_input');
+        var txtIn = document.getElementById ('search_input');
+        var txtOut = document.getElementById ('search_output');
 
-        // append additional args only if they don't already exist
-        if (-1 == txt.value.indexOf(additionalArgs)) {
-            txt.value = txt.value + additionalArgs;
-        }
+        txtOut.value = txtIn.value + additionalArgs;
+
         return true;
     };
     var searchform = document.getElementById('searchform');
