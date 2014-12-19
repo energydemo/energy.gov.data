@@ -19,8 +19,17 @@
   }
 </style>
 <style media="all">
+  h4.heading {
+  margin-bottom: 1em;
+  }
+
   .block-energy-social {
   display: none;
+  }
+
+  .search_hints {
+  color: gray;
+  padding: 0 2em 1em 2em;
   }
 
   #search_input {
@@ -332,23 +341,56 @@
 
 	                          <label class="visuallyhidden" for="doequery">Search for:</label>
 	                          <input id="search_input" type="text" value="" x-webkit-speech="" placeholder="What DOE data are you looking for?">
+
+                                  <div class="search_hints">
+                                    Search hints:
+                                    <div>Try <em>solar</em> to find all solar energy data.</div>
+                                    <div>Try <em>nuclear</em> to discover all the data sets relating to nuclear energy.</div>
+                                    <div>Try <em>wind</em> or <em>tidal</em> or <em>geothermal</em> to explore different forms of renewable energy.</div>
+                                  </div>
+
 	                          <input class="visuallyhidden" type="submit" id="searchsubmit" value="Search" class="button">
                                 </form>
                               </div>
 
-                              <p>The Open Energy Data project is part of Department of Energy's <a href="http://energy.gov/data/articles/digital-strategy">Digital Strategy</a>, and is intended to improve access to DOE data. The result is a data catalog that is a continually-growing list of publicly available DOE datasets.</p>
+                              <p>The Open Energy Data project is part of Department of Energy's <a href="http://energy.gov/data/articles/digital-strategy">Digital Strategy</a>, and is intended to improve access to DOE data. The result is a data catalog that is a continually-growing list of publicly available DOE datasets.
 
-                              <p>In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America's energy, environmental, and nuclear challenges.</p>
+                              In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America's energy, environmental, and nuclear challenges.</p>
 
-                              <h4><strong>Section</strong></h4>
+                              <h4 class="heading"><strong>Who can use this data?</strong></h4>
 
-                              <h5><strong>Subsection</strong></h5>
-                              <p>Subsection description</p>
+                              <h5><strong>Home Owners</strong></h5>
+                              <div class="content">
+                                <div class="field-link-list-links-wrapper">
+                                  <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
+                                    <li>Get your energy usage data from your local utility - <a href="https://cms.doe.gov/data/green-button" class=""><div>Green Button Energy Usage Data</div></a></li>
+                                    <li>Discover your vehicle's fuel economy - <a href="http://www.fueleconomy.gov/feg/download.shtml" class=""><span>FuelEconomy.gov Data</span></a></li>
+                                    <li>Explore how energy efficient your appliances are - <a href="https://www.energystar.gov/istar/has/" class=""><span>Energy Star Automated Benchmarking System</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
 
-                              <h4><strong>Section</strong></h4>
+                              <h5><strong>Scientists &amp; Researchers</strong></h5>
+                              <div class="field-link-list-links-wrapper">
+                                <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
+                                  <li><a href="http://www.osti.gov/nle/" class=""><span>National Library of Energy</span></a></li>
+                                  <li><a href="http://techportal.eere.energy.gov/" class=""><span>Energy Innovation Portal: Patents and Technologies</span></a></li>
+                                  <li><a href="http://energy.gov/exit?url=http%3A//en.openei.org/wiki/Help%3AEnergy_Hackathon_Resources" class=""><span>OpenEI.org</span></a></li>
+                                  <li><a href="http://developer.nrel.gov/" class=""><span>Developer Resources from the National Renewable Energy Laboratory</span></a></li>
+                                </ul>
+                              </div>
 
-                              <h5><strong>Subsection</strong></h5>
-                              <p>Subsection description</p>
+                              <h5><strong>Educators</strong></h5>
+                              <div class="field-link-list-links-wrapper">
+                                <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
+                                  <li><a href="http://www.eia.gov/" class=""><span>Energy Information Administration: Independent Statistics and Analysis</span></a></li>
+                                  <li><a href="http://energy.data.gov" class=""><span>Energy.Data.Gov</span></a></li>
+                                  <li><a href="http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov" class=""><span>Dept. of Energy Data Catalog</span></a></li>
+                                </ul>
+                              </div>
+
+                              <h5><strong>You</strong></h5>
+                              <p>How can the DOE serve the American public? To let us know how you are using DOE data, or ask us where to find the data you need, please send a message to: <a href="mailto:data-feedback@hq.doe.gov">data-feedback@hq.doe.gov</a></p>
 
                             </div>
                           </div>
