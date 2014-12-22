@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+<html>
+  <head>
 <link type="text/css" rel="stylesheet" href="./data_files/css_g0fmN0jIIROLhnXMfTYduKBK8OAQLUDJ9ftKChBx93Q.css" media="all">
 <link type="text/css" rel="stylesheet" href="./data_files/1.css" media="all">
 <link type="text/css" rel="stylesheet" href="./data_files/css_Ikxyiam9LlL5S0J8fkX6pua8ZULAX3oQN5OPrzysRfg.css" media="all">
 <link type="text/css" rel="stylesheet" href="./data_files/css_Ww18lDqnSNmxGqw45lAEd7Kj-JWamHTbhHBEN8ho5nU.css" media="all">
   <meta name="viewport" content="width=device-width, maximum-scale=2, minimum-scale=1, initial-scale=1, user-scalable=yes">
-<link rel="stylesheet" type="text/css" href="./data_files/widget007.old.css" media="all"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+  <link rel="stylesheet" type="text/css" href="./data_files/widget007.old.css" media="all">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
 .en-markup-crop-options {
     top: 18px !important;
     left: 50% !important;
@@ -44,6 +50,43 @@
   display: none;
   }
 </style>
+
+<style media="all">
+  /*
+   * override jquery-ui
+  */
+
+  .tabs-divider {
+  }
+
+  .tabs-header {
+  width: 98%;		/* aligns with search box */
+  }
+
+  .ui-corner-all {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  }
+
+  .ui-widget, .ui-widget-content {
+  border: none;
+  color: black;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  }
+
+  .ui-widget-content a {
+  color: #138bba;
+  }
+
+  .ui-widget-header {
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  }
+</style>
+
 </head>
 <body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-383257 node-type-article og-context og-context-taxonomy-term og-context-taxonomy-term-31 has-content-sidebar multi-column" data-twttr-rendered="true"><iframe id="twttrHubFrameSecure" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrameSecure" src="./data_files/hub.fe4e93d64f1afc988e99833088f71057(1).html" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe><iframe id="twttrHubFrame" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrame" src="./data_files/hub.fe4e93d64f1afc988e99833088f71057.html" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe>
   <div id="skip-link">
@@ -353,44 +396,64 @@
                                 </form>
                               </div>
 
-                              <p>The Open Energy Data project is part of Department of Energy's <a href="http://energy.gov/data/articles/digital-strategy">Digital Strategy</a>, and is intended to improve access to DOE data. The result is a data catalog that is a continually-growing list of publicly available DOE datasets.
+                              <div id="tabs">
+                                <ul class="tabs-header">
+                                  <li><a href="#tabs-1">About</a></li>
+                                  <li><a href="#tabs-2">Policy</a></li>
+                                  <li><a href="#tabs-3">Resources</a></li>
+                                </ul>
+                                <div class="tabs-divider"></div>
+                                <div id="tabs-1">
 
-                              In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America's energy, environmental, and nuclear challenges.</p>
+                                  <p>The Open Energy Data project is part of Department of Energy's <a href="http://energy.gov/data/articles/digital-strategy">Digital Strategy</a>, and is intended to improve access to DOE data. The result is a data catalog that is a continually-growing list of publicly available DOE datasets.
 
-                              <h4 class="heading"><strong>Who can use this data?</strong></h4>
+                                    In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America's energy, environmental, and nuclear challenges.</p>
 
-                              <h5><strong>Home Owners</strong></h5>
-                              <div class="content">
-                                <div class="field-link-list-links-wrapper">
-                                  <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                    <li>Get your energy usage data from your local utility - <a href="https://cms.doe.gov/data/green-button" class=""><div>Green Button Energy Usage Data</div></a></li>
-                                    <li>Discover your vehicle's fuel economy - <a href="http://www.fueleconomy.gov/feg/download.shtml" class=""><span>FuelEconomy.gov Data</span></a></li>
-                                    <li>Explore how energy efficient your appliances are - <a href="https://www.energystar.gov/istar/has/" class=""><span>Energy Star Automated Benchmarking System</span></a></li>
-                                  </ul>
+                                  <h4 class="heading"><strong>Who can use this data?</strong></h4>
+
+                                  <h5><strong>Home Owners</strong></h5>
+                                  <div class="content">
+                                    <div class="field-link-list-links-wrapper">
+                                      <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
+                                        <li>Get your energy usage data from your local utility - <a href="https://cms.doe.gov/data/green-button" class=""><div>Green Button Energy Usage Data</div></a></li>
+                                        <li>Discover your vehicle's fuel economy - <a href="http://www.fueleconomy.gov/feg/download.shtml" class=""><span>FuelEconomy.gov Data</span></a></li>
+                                        <li>Explore how energy efficient your appliances are - <a href="https://www.energystar.gov/istar/has/" class=""><span>Energy Star Automated Benchmarking System</span></a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <h5><strong>Scientists &amp; Researchers</strong></h5>
+                                  <div class="field-link-list-links-wrapper">
+                                    <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
+                                      <li><a href="http://www.osti.gov/nle/" class=""><span>National Library of Energy</span></a></li>
+                                      <li><a href="http://techportal.eere.energy.gov/" class=""><span>Energy Innovation Portal: Patents and Technologies</span></a></li>
+                                      <li><a href="http://energy.gov/exit?url=http%3A//en.openei.org/wiki/Help%3AEnergy_Hackathon_Resources" class=""><span>OpenEI.org</span></a></li>
+                                      <li><a href="http://developer.nrel.gov/" class=""><span>Developer Resources from the National Renewable Energy Laboratory</span></a></li>
+                                    </ul>
+                                  </div>
+
+                                  <h5><strong>Educators</strong></h5>
+                                  <div class="field-link-list-links-wrapper">
+                                    <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
+                                      <li><a href="http://www.eia.gov/" class=""><span>Energy Information Administration: Independent Statistics and Analysis</span></a></li>
+                                      <li><a href="http://energy.data.gov" class=""><span>Energy.Data.Gov</span></a></li>
+                                      <li><a href="http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov" class=""><span>Dept. of Energy Data Catalog</span></a></li>
+                                    </ul>
+                                  </div>
+
+                                  <h5><strong>You</strong></h5>
+                                  <p>How can the DOE serve the American public? To let us know how you are using DOE data, or ask us where to find the data you need, please send a message to: <a href="mailto:bosco.so@ee.doe.gov">bosco.so@ee.doe.gov</a></p>
+
+                                </div>
+                                <div id="tabs-2">
+                                  <p>TABS 2</p>
+                                </div>
+                                <div id="tabs-3">
+                                  <p>TABS 3, paragraph 1</p>
+                                  <p>TABS 3, paragraph 2</p>
                                 </div>
                               </div>
 
-                              <h5><strong>Scientists &amp; Researchers</strong></h5>
-                              <div class="field-link-list-links-wrapper">
-                                <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                  <li><a href="http://www.osti.gov/nle/" class=""><span>National Library of Energy</span></a></li>
-                                  <li><a href="http://techportal.eere.energy.gov/" class=""><span>Energy Innovation Portal: Patents and Technologies</span></a></li>
-                                  <li><a href="http://energy.gov/exit?url=http%3A//en.openei.org/wiki/Help%3AEnergy_Hackathon_Resources" class=""><span>OpenEI.org</span></a></li>
-                                  <li><a href="http://developer.nrel.gov/" class=""><span>Developer Resources from the National Renewable Energy Laboratory</span></a></li>
-                                </ul>
-                              </div>
-
-                              <h5><strong>Educators</strong></h5>
-                              <div class="field-link-list-links-wrapper">
-                                <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                  <li><a href="http://www.eia.gov/" class=""><span>Energy Information Administration: Independent Statistics and Analysis</span></a></li>
-                                  <li><a href="http://energy.data.gov" class=""><span>Energy.Data.Gov</span></a></li>
-                                  <li><a href="http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov" class=""><span>Dept. of Energy Data Catalog</span></a></li>
-                                </ul>
-                              </div>
-
-                              <h5><strong>You</strong></h5>
-                              <p>How can the DOE serve the American public? To let us know how you are using DOE data, or ask us where to find the data you need, please send a message to: <a href="mailto:data-feedback@hq.doe.gov">data-feedback@hq.doe.gov</a></p>
 
                             </div>
                           </div>
@@ -540,7 +603,9 @@ _gaq.push(
 //--><!]]>
 </script>
 <script type="text/javascript" src="./data_files/js_H77dWfnx0wOqmAqlCvX9reRuPwug2w5J-47qKBtKBOw.js"></script>
-  
+
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
 <script type="text/javascript">
     var fnAppendArgs = function() {
         var additionalArgs = ' AND (organization:eia-doe-gov OR organization:doe-gov OR organization:osti-gov)';
@@ -555,4 +620,13 @@ _gaq.push(
     searchform.onsubmit = fnAppendArgs;
 </script>
 
-<div id="window-resizer-tooltip" style="display: block;"><a href="http://energy.gov/articles/feedback-wanted-help-energy-department-go-mobile-open-data#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1296</span> x <span class="tooltipHeight" id="winHeight">873</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1296</span> x <span class="tooltipHeight" id="vpHeight">734</span></div><iframe name="oauth2relay768050181" id="oauth2relay768050181" src="./data_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
+<div id="window-resizer-tooltip" style="display: block;"><a href="http://energy.gov/articles/feedback-wanted-help-energy-department-go-mobile-open-data#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1296</span> x <span class="tooltipHeight" id="winHeight">873</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1296</span> x <span class="tooltipHeight" id="vpHeight">734</span></div><iframe name="oauth2relay768050181" id="oauth2relay768050181" src="./data_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+</body>
+
+<script>
+    jQuery(function() {
+        jQuery( "#tabs" ).tabs();
+    });
+</script>
+
+</html>
