@@ -24,13 +24,19 @@
     margin-left: 0px !important;
   }
 </style>
-<style media="all">
+
+    <style media="all">
   h4.heading {
   margin-bottom: 1em;
   }
 
   .block-energy-social {
   display: none;
+  }
+
+  .copyable {
+  cursor: pointer;
+  color: #0092CC;
   }
 
   .search_hints {
@@ -387,9 +393,9 @@
 
                                   <div class="search_hints">
                                     Search hints:
-                                    <div>Try <em>solar</em> to find all solar energy data.</div>
-                                    <div>Try <em>nuclear</em> to discover all the data sets relating to nuclear energy.</div>
-                                    <div>Try <em>wind</em> or <em>tidal</em> or <em>geothermal</em> to explore different forms of renewable energy.</div>
+                                    <div>Try <em class="copyable">solar</em> to find all solar energy data.</div>
+                                    <div>Try <em class="copyable">nuclear</em> to discover all the data sets relating to nuclear energy.</div>
+                                    <div>Try <em class="copyable">wind</em> or <em class="copyable">tidal</em> or <em class="copyable">geothermal</em> to explore different forms of renewable energy.</div>
                                   </div>
 
 	                          <input class="visuallyhidden" type="submit" id="searchsubmit" value="Search" class="button">
@@ -636,6 +642,13 @@ _gaq.push(
 <script>
     jQuery(function() {
         jQuery( "#tabs" ).tabs();
+
+        // bind click handler to "copyable" class to transfer text into search form
+        jQuery('.copyable').bind('click', function(evt) {
+            var clicked = evt.currentTarget;
+            var txt = clicked.innerText;
+            jQuery('#search_input').val(txt);
+        });
     });
 </script>
 
