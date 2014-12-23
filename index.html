@@ -613,11 +613,16 @@ _gaq.push(
 
 <script type="text/javascript">
     var fnAppendArgs = function() {
-        var additionalArgs = ' AND (organization:eia-doe-gov OR organization:doe-gov OR organization:osti-gov)';
+        var additionalArgs = '(organization:eia-doe-gov OR organization:doe-gov OR organization:osti-gov)';
         var txtIn = document.getElementById ('search_input');
         var txtOut = document.getElementById ('search_output');
 
-        txtOut.value = txtIn.value + additionalArgs;
+        if (0 == txtIn.value.length) {
+            txtOut.value = additionalArgs;
+        }
+        else {
+            txtOut.value = txtIn.value + " AND " + additionalArgs;
+        }
 
         return true;
     };
