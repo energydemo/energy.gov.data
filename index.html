@@ -412,12 +412,12 @@
 
                               <div id="tabs">
                                 <ul class="tabs-header">
-                                  <li><a href="#tabs-1">About</a></li>
-                                  <li><a href="#tabs-2">Policy</a></li>
-                                  <li><a href="#tabs-3">Resources</a></li>
+                                  <li><a href="#about" class="update_hist">About</a></li>
+                                  <li><a href="#policy" class="update_hist">Policy</a></li>
+                                  <li><a href="#resources" class="update_hist">Resources</a></li>
                                 </ul>
                                 <div class="tabs-divider"></div>
-                                <div id="tabs-1">
+                                <div id="about">
 
                                   <p>The Open Energy Data project is part of Department of Energy's <a href="http://energy.gov/data/articles/digital-strategy">Digital Strategy</a>, and is intended to improve access to DOE data. The result is a data catalog that is a continually-growing list of publicly available DOE datasets.
 
@@ -459,7 +459,7 @@
                                   <p>How can the DOE serve the American public? To let us know how you are using DOE data, or ask us where to find the data you need, please send a message to: <a href="mailto:bosco.so@ee.doe.gov">bosco.so@ee.doe.gov</a></p>
 
                                 </div>
-                                <div id="tabs-2">
+                                <div id="policy">
                                   <p><!-- placeholder --></p>
 
                                   <h5 class="heading">Open Data at the Department of Energy (DOE)</h5>
@@ -477,7 +477,7 @@
                                   <p>The Office of Information Resources within the DOE administers policies, programs, and procedures to ensure DOE compliance with the FOIA, <a href="http://www.justice.gov/oip/blog/foia-update-freedom-information-act-5-usc-sect-552-amended-public-law-no-104-231-110-stat">5 U.S.C. 552</a>.  The FOIA establishes that any person has a right of access to federal agency records and that federal agency records must be made available to the public unless they are specifically exempt from public release.  The <a href="http://energy.gov/management/office-management/operational-management/freedom-information-act">DOE Freedom of Information Act webpage</a> provides information on submitting a FOIA request.</p>
 
                                 </div>
-                                <div id="tabs-3">
+                                <div id="resources">
                                   <p><!-- placeholder --></p>
 
                                   <h5 class="heading">[Resources TBD]</h5>
@@ -665,6 +665,10 @@ _gaq.push(
 <script>
     jQuery(function() {
         jQuery( "#tabs" ).tabs();
+        jQuery('#tabs ul li a.update_hist').bind("click", function(evt) {
+            location.hash = jQuery(this).attr('href');
+            evt.preventDefault();
+        });
 
         // bind click handler to "copyable" class to transfer text into search form
         jQuery('.copyable').bind('click', function(evt) {
