@@ -63,11 +63,18 @@
    * override jquery-ui
   */
 
+  #tabs {
+  width: 98%;	/* same as search box */
+  }
+
   .tabs-divider {
+  clear: both;
+  border-top: 1px solid #aaa;
   }
 
   .tabs-header {
-  width: 98%;		/* aligns with search box */
+  float: right;
+  border-bottom: none;	/* replaced by .tabs-divider border-top */
   }
 
   .ui-corner-all {
