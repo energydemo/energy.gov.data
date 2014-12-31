@@ -640,6 +640,8 @@ _gaq.push(
 
 <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
+<script src="data_files/jquery.address-1.5.min.js"></script>
+
 <script type="text/javascript">
     var fnAppendArgs = function() {
         var additionalArgs = '(organization:eia-doe-gov OR organization:doe-gov OR organization:osti-gov)';
@@ -664,10 +666,35 @@ _gaq.push(
 
 <script>
     jQuery(function() {
-        jQuery( "#tabs" ).tabs();
-        jQuery('#tabs ul li a.update_hist').bind("click", function(evt) {
-            location.hash = jQuery(this).attr('href');
-            evt.preventDefault();
+        var tabsElement = jQuery( "#tabs" )
+        tabsElement.tabs({
+            activate: function(evt, ui) {
+                // show active tab index in history so it can be deep linked
+                location.hash = tabsElement.tabs('option', 'active');
+            },
+        });
+
+        // upon history change, flip to correct tab
+        jQuery.address.change(function(evt) {
+            var duple = location.hash.split('#');
+            var currTab = tabsElement.tabs('option', 'active');
+            var gotoTab = parseInt(duple[1]);
+
+            // normalize gotoTab to an integer
+            if (!gotoTab) {
+                gotoTab = 0;
+            }
+
+            //// console.log('CURR:', currTab, 'GOTO:', gotoTab);
+
+            // if where we want to go is different from where we are,
+            // switch to it; need this check to avoid infinite loop
+            if (gotoTab != currTab) {
+
+                //// console.log('SWITCH TO:', gotoTab);
+
+                tabsElement.tabs('option', 'active', gotoTab);
+            }
         });
 
         // bind click handler to "copyable" class to transfer text into search form
