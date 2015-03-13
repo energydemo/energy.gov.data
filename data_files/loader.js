@@ -17,7 +17,7 @@ Modernizr.load([
     // The test: does the browser understand Media Queries?
     test : Modernizr.mq('only all'),
     // If not, load the respond.js file
-    nope : '/sites/all/themes/energy/scripts/respond/respond.min.js',
+    nope : location.pathname + 'sites/all/themes/energy/scripts/respond/respond.min.js',
   }
 ]);
 
@@ -26,9 +26,9 @@ Modernizr.load([
     // Test for matchMedia
     test: window.matchMedia,
     // If not load polyfill
-    nope: '/sites/all/themes/energy/scripts/media-match/media.match.min.js',
+    nope: location.pathname + 'sites/all/themes/energy/scripts/media-match/media.match.min.js',
     // Load enquire for everything
-    load: ['/sites/all/themes/energy/scripts/enquire/enquire.min.js'],
+    load: [location.pathname + 'sites/all/themes/energy/scripts/enquire/enquire.min.js'],
     // On completion execute specific functions that use enquire.
     complete: function () {
       Drupal.doeResponsive.menuNavigation.attach(document);
