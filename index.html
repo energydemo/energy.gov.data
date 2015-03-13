@@ -559,59 +559,27 @@
 
                                   <section id="resources-container">
 
-                                    <div id="stakeholders-container">
-                                      <h6><subheading>Homeowners</subheading></h6>
+                                    <script id="stakeholder-template"
+                                            type="text/x-handlebars-template">
+                                      <h6><subheading>{{category}}</subheading></h6>
                                       <div class="content">
                                         <div class="field-link-list-links-wrapper">
                                           <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                            <li>Get your energy usage data from your local utility - <a href="https://cms.doe.gov/data/green-button" class=""><span>Green Button Energy Usage Data</span></a></li>
-                                            <li>Discover your vehicle's fuel economy - <a href="http://www.fueleconomy.gov/feg/download.shtml" class=""><span>FuelEconomy.gov Data</span></a></li>
-                                            <li>Explore how energy efficient your appliances are - <a href="https://www.energystar.gov/istar/has/" class=""><span>Energy Star Automated Benchmarking System</span></a></li>
-                                            <li>Learn how to make your home more energy efficient - <a href="http://www.energy.gov/energysaver/energy-saver" class=""><span>Energy Saver</span></a></li>
-                                            <li>Find out if your state offers energy efficiency incentives - <a href="http://www.dsireusa.org" class=""><span>DSIRE</span></a></li>
+                                            {{#each links}}
+                                            <li>
+                                              {{#if description}}
+                                                {{description}} -
+                                              {{/if}}
+                                              <a href="{{linkurl}}">{{linktext}}</a>
+                                            </li>
+                                            {{/each}}
                                           </ul>
                                         </div>
                                       </div>
+                                    </script>
 
-                                      <h6><subheading>Scientists &amp; Researchers</subheading></h6>
-                                      <div class="field-link-list-links-wrapper">
-                                        <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                          <li>Search DOE-affiliated articles and manuscripts - <a href="http://www.osti.gov/pages/" class=""><span>DOE/OSTI PAGES</span></a></li>
-                                          <li>Explore data from DOE-funded research projects - <a href="http://www.osti.gov/dataexplorer/" class=""><span>DOE/OSTI Data Explorer</span></a></li>
-                                          <li>Access historical and projected source and site energy data - <a href="http://www.eia.gov/" class=""><span>Energy Information Administration</span></a></li>
-                                        </ul>
-                                      </div>
-
-                                      <h6><subheading>K-12 Students</subheading></h6>
-                                      <div class="field-link-list-links-wrapper">
-                                        <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                          <li><a href="http://www.eia.gov/" class=""><span>Energy Information Administration: Independent Statistics and Analysis</span></a></li>
-                                          <li><a href="http://energy.data.gov" class=""><span>Energy.Data.Gov</span></a></li>
-                                          <li><a href="http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov" class=""><span>DOE Data Catalog (data.gov)</span></a></li>
-                                        </ul>
-                                      </div>
-
-                                      <h6><subheading>Entrepreneurs</subheading></h6>
-                                      <div class="field-link-list-links-wrapper">
-                                        <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                          <li><a href="http://techportal.eere.energy.gov/" class=""><span>Energy Innovation Portal: Patents and Technologies</span></a></li>
-                                          <li><a href="http://www.osti.gov/doepatents/" class=""><span>DOE/OSTI Patent Database</span></a></li>
-                                          <li><a href="http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov" class=""><span>DOE Data Catalog (data.gov)</span></a></li>
-                                        </ul>
-                                      </div>
-
-                                      <h6><subheading>Developers</subheading></h6>
-                                      <div class="field-link-list-links-wrapper">
-                                        <ul class="field field-name-field-link-list-links field-type-link-field field-label-hidden list-columns-1">
-                                          <li><a href="http://www.eia.gov/developer" class=""><span>Energy Information Administration Developer Portal</span></a></li>
-                                          <li><a href="http://developer.nrel.gov/" class=""><span>Developer Resources from the National Renewable Energy Laboratory</span></a></li>
-                                          <li><a href="http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov" class=""><span>DOE Data Catalog (data.gov)</span></a></li>
-                                          <li><a href="http://en.openei.org/wiki/Help:Energy_Hackathon_Resources" class=""><span>Energy Hackathon Resources (openei.org)</span></a></li>
-                                          <li><a href="http://www.greenbuttondata.org/" class=""><span>Green Button Data Information</span></a></li>
-                                        </ul>
-                                      </div>
-
-                                    </div><!-- stakeholders-container -->
+                                    <div id="stakeholders-container">
+                                    </div>
 
                                     <script id="topic-template"
                                             type="text/x-handlebars-template">
@@ -630,51 +598,9 @@
                                     </script>
 
                                     <div id="topics-container">
-                                    
-                                      <div class="examplesPod">
-                                        <div class="podTitle">
-                                          <span class="category">Energy Consumption</span>
-                                        </div>
-                                        <img class="podImage" src="img/turn_off_lights_19916160.jpg">
-                                        <div class="subpodLinks">
-                                          <a class="exampleLink" href="http://www.eia.gov/consumption/residential/">Residential Buildings</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/consumption/commercial/">Commercial Buildings</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/consumption/manufacturing/">Industry</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/consumption/data.cfm#vehicles">Transportation</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                        </div>
-                                      </div>
-                                    
-                                      <div class="examplesPod">
-                                        <div class="podTitle">
-                                          <span class="category">Energy Resources</span>
-                                        </div>
-                                        <img class="podImage" src="img/large_solar_16604.jpg">
-                                        <div class="subpodLinks">
-                                          <a class="exampleLink" href="http://www.eia.gov/naturalgas/data.cfm#summary">Natural Gas</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/coal/data.cfm#summary">Coal</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/petroleum/data.cfm#summary">Petroleum</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#solar">Solar</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#wind">Wind</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#hydro">Hydropower</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/nuclear/data.cfm#summary">Nuclear</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                          <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#geothermal">Geothermal</a>
-                                          <span class="podlink_separator">&middot;</span>
-                                        </div>
-                                      </div>
                                     </div>
 
-                                  </section><!-- resources-container -->
+                                  </section>
                                 </div>
                               </div>
 
@@ -796,7 +722,14 @@
 </div>
 
 </div>   <script type="text/javascript" src="./data_files/modernizr-custom.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe id="_atssh107" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./data_files/sh180.html"></iframe></div><script type="text/javascript" src="./data_files/core165.js"></script>
+<!-- jquery.js -->
 <script type="text/javascript" src="./data_files/js_D5KdDPtjyr0OzUeIA46IVRSmVFk9Y1hT9_LfbplYgRA.js"></script>
+
+<!-- handlerbar & loading resources templates -->
+<script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
+<script type="text/javascript" src="js/load-stakeholders.js"></script>
+<script type="text/javascript" src="js/load-topics.js"></script>
+
 <script type="text/javascript" src="./data_files/js_6RfqyQ6dGB15EZV8a7SPpd5EOSSerQR7s-GxPVyVTqA.js"></script>
 <script type="text/javascript" src="./data_files/navigation.js"></script>
 <script type="text/javascript" src="./data_files/energy.js"></script>
@@ -895,9 +828,5 @@ _gaq.push(
         });
     });
 </script>
-
-<script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
-
-<script type="text/javascript" src="js/load-topics.js"></script>
 
 </html>
