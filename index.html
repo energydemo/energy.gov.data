@@ -617,29 +617,28 @@
                                     </ul>
                                   </div>
 
+                                <script id="baseball-card-template" type="text/x-handlebars-template">
                                   <div class="examplesPod">
-                                    <a href="Math.html">
+
                                         <div class="podTitle">
                                             
-                                            <span class="category">Energy Resources</span>
+                                            <span class="category">{{title}}</span>
 
                                         </div>
-                                        <img class="podImage" src="img/large_solar_16604.jpg">
-                                    </a>
+                                        <img class="podImage" src="{{image}}" />
+
                                     <div class="subpodLinks">
                                         
-                                        <a class="exampleLink" href="http://www.eia.gov/naturalgas/data.cfm#summary">Natural Gas &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/coal/data.cfm#summary">Coal &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/petroleum/data.cfm#summary">Petroleum &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#solar">Solar &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#wind">Wind &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#hydro">Hydropower &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/nuclear/data.cfm#summary">Nuclear &middot;</a>
-                                        <a class="exampleLink" href="Trigonometry.html">Ocean/Wave/Tidal &middot;</a>
-                                        <a class="exampleLink" href="http://www.eia.gov/renewable/data.cfm#geothermal">Geothermal &middot;</a>
-                                        <a class="exampleLink" href="Math.html">...</a>
+                                        {{#each links}}
+                                        <a class="exampleLink" href="{{this}}">{{@key}}</a>
+                                        &middot;
+                                        {{/each}}
                                         
                                     </div>
+                                  </div>
+                                </script>
+
+                                <div id="baseball-card-container">
                                 </div>
 
                                 </div>
@@ -862,5 +861,9 @@ _gaq.push(
         });
     });
 </script>
+
+<script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
+
+<script type="text/javascript" src="js/load-topics.js"></script>
 
 </html>
