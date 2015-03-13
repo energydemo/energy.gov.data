@@ -4,9 +4,11 @@ jQuery(function() {
         var source    = jQuery('#' + basename + '-template').html();
         var template  = Handlebars.compile(source);
         var container = jQuery('#' + basename + 's-container');
+        var ajax;
 
         console.log(basename, 'loading...');
-        jQuery.get('data/' + basename + 's.json', function(obj) {
+        ajax = jQuery.ajax('data/' + basename + 's.json', {dataType: "json"});
+        ajax.done(function(obj) {
             console.log('... loaded ', basename);
 
             jQuery.each(obj.data, function(ii, item) {
