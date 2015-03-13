@@ -4,27 +4,63 @@
       "title": "Energy Consumption",
       "image": "img/turn_off_lights_19916160.jpg",
       "description": null,
-      "links": {
-        "Residential Buildings": "http://www.eia.gov/consumption/residential/",
-        "Commercial Buildings": "http://www.eia.gov/consumption/commercial/",
-        "Industry": "http://www.eia.gov/consumption/manufacturing/",
-        "Transportation": "http://www.eia.gov/consumption/data.cfm#vehicles"
-      }
+      "links": [
+        {
+          "text": "Residential Buildings",
+          "url": "http://www.eia.gov/consumption/residential/"
+        },
+        {
+          "text": "Commercial Buildings",
+          "url": "http://www.eia.gov/consumption/commercial/"
+        },
+        {
+          "text": "Industry",
+          "url": "http://www.eia.gov/consumption/manufacturing/"
+        },
+        {
+          "text": "Transportation",
+          "url": "http://www.eia.gov/consumption/data.cfm#vehicles"
+        }
+      ]
     },
     {
       "title": "Energy Resources",
       "image": "img/large_solar_16604.jpg",
       "description": null,
-      "links": {
-        "Natural Gas": "http://www.eia.gov/naturalgas/data.cfm#summary",
-        "Coal": "http://www.eia.gov/coal/data.cfm#summary",
-        "Petroleum": "http://www.eia.gov/petroleum/data.cfm#summary",
-        "Solar": "http://www.eia.gov/renewable/data.cfm#solar",
-        "Wind": "http://www.eia.gov/renewable/data.cfm#wind",
-        "Hydropower": "http://www.eia.gov/renewable/data.cfm#hydro",
-        "Nuclear": "http://www.eia.gov/nuclear/data.cfm#summary",
-        "Geothermal": "http://www.eia.gov/renewable/data.cfm#geothermal"
-      }
+      "links": [
+        {
+          "text": "Natural Gas",
+          "url": "http://www.eia.gov/naturalgas/data.cfm#summary"
+        },
+        {
+          "text": "Coal",
+          "url": "http://www.eia.gov/coal/data.cfm#summary"
+        },
+        {
+          "text": "Petroleum",
+          "url": "http://www.eia.gov/petroleum/data.cfm#summary"
+        },
+        {
+          "text": "Solar",
+          "url": "http://www.eia.gov/renewable/data.cfm#solar"
+        },
+        {
+          "text": "Wind",
+          "url": "http://www.eia.gov/renewable/data.cfm#wind"
+        },
+        {
+          "text": "Hydropower",
+          "url": "http://www.eia.gov/renewable/data.cfm#hydro"
+        },
+        {
+          "text": "Nuclear",
+          "url": "http://www.eia.gov/nuclear/data.cfm#summary"
+        },
+        {
+          "text": "Geothermal",
+          "url": "http://www.eia.gov/renewable/data.cfm#geothermal"
+        }
+      ]
     }
   ]
 }

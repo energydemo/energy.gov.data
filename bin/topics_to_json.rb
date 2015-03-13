@@ -26,7 +26,7 @@ class TopicsToJson
       end
 
       # iterate over variable links
-      links = topic['links'] = {}
+      links = topic['links'] = []
       (headers.size...all_headers.size).step(2) do |ii|
         # break out of loop if linktext is nil
         break if (linktext = row[ii]).nil?
@@ -34,7 +34,7 @@ class TopicsToJson
         # skip this iteration if linkurl is nil
         next if (linkurl = row[ii + 1]).nil?
 
-        links[linktext] = linkurl
+        links << {'text'=>linktext, 'url'=>linkurl}
       end
 
       topics << topic
@@ -81,24 +81,28 @@ elsif __FILE__ == $0 && 0 == ARGV.length
 
       # row 0 variable data - hash of linktext => linkurl
       links = row['links']
-      assert_instance_of Hash, links
+      assert_instance_of Array, links
       assert_equal 4, links.size
-      assert_equal 'http://www.eia.gov/consumption/residential/',
-                   links['Residential Buildings']
-      assert_equal 'http://www.eia.gov/consumption/commercial/',
-                   links['Commercial Buildings']
-      assert_equal 'http://www.eia.gov/consumption/manufacturing/',
-                   links['Industry']
-      assert_equal 'http://www.eia.gov/consumption/data.cfm#vehicles',
-                   links['Transportation']
+
+      assert_equal 'Residential Buildings', links[0]['text']
+      assert_equal 'http://www.eia.gov/consumption/residential/', links[0]['url']
+
+      assert_equal 'Commercial Buildings', links[1]['text']
+      assert_equal 'http://www.eia.gov/consumption/commercial/', links[1]['url']
+
+      assert_equal 'Industry', links[2]['text']
+      assert_equal 'http://www.eia.gov/consumption/manufacturing/', links[2]['url']
+
+      assert_equal 'Transportation', links[3]['text']
+      assert_equal 'http://www.eia.gov/consumption/data.cfm#vehicles', links[3]['url']
     end
 
     def test_empty_link_url
       topics = @res['topics']
       row = topics[1]
       links = row['links']
-      assert_equal ["Natural Gas", "Coal", "Petroleum", "Solar", "Wind", "Hydropower", "Nuclear", "Geothermal"],
-                   links.keys
+      linktexts = links.map {|hash| hash['text']}
+      assert_equal ["Natural Gas", "Coal", "Petroleum", "Solar", "Wind", "Hydropower", "Nuclear", "Geothermal"], linktexts
     end
   end
 

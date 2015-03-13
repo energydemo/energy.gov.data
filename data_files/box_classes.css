@@ -43,3 +43,11 @@ a .podTitle, a .podImage {
     -webkit-transistion: all .2s linear;
     transition: all .2s linear;
 }
+
+/* Since a separator is always generated after a link item by the
+baseball-card-template, there will always be a trailing
+separator. Suppress its display if it's the last child. */
+.podlink_separator:last-child {
+    display: none;
+}
+
