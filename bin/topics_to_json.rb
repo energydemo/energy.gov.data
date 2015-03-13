@@ -15,7 +15,7 @@ class TopicsToJson
     headers = all_headers.reject(&:nil?)
 
     # iterate over rows
-    topics = result['topics'] = []
+    topics = result['data'] = []
     csv.each do |row|
       topic = {}
 
@@ -65,16 +65,15 @@ elsif __FILE__ == $0 && 0 == ARGV.length
       fname = 'test/fixtures/topics.csv'
       @converter = TopicsToJson.new
       @res = @converter.process(fname)
+      @topics = @res['data']
     end
 
     def test_topics
-      topics = @res['topics']
-
-      assert_instance_of Array, topics
-      assert_equal 2, topics.size
+      assert_instance_of Array, @topics
+      assert_equal 2, @topics.size
 
       # row 0
-      row = topics.first
+      row = @topics.first
       assert_equal 'Energy Consumption', row['title']
       assert_equal 'img/turn_off_lights_19916160.jpg', row['image']
       assert_nil row['description']
@@ -98,8 +97,7 @@ elsif __FILE__ == $0 && 0 == ARGV.length
     end
 
     def test_empty_link_url
-      topics = @res['topics']
-      row = topics[1]
+      row = @topics[1]
       links = row['links']
       linktexts = links.map {|hash| hash['text']}
       assert_equal ["Natural Gas", "Coal", "Petroleum", "Solar", "Wind", "Hydropower", "Nuclear", "Geothermal"], linktexts

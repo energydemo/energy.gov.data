@@ -13,7 +13,7 @@ class StakeholdersToJson
     headers = all_headers.reject(&:nil?)
 
     # organize return result
-    result = {'stakeholders' => []}
+    result = {'data' => []}
 
     # iterate over rows
     current_category = nil
@@ -25,7 +25,7 @@ class StakeholdersToJson
           'category' => row['CATEGORY'],
           'links'    => []
         }
-        result['stakeholders'] << current_stakeholder
+        result['data'] << current_stakeholder
 
         current_category = row['CATEGORY']
       end
@@ -64,7 +64,7 @@ elsif __FILE__ == $0 && 0 == ARGV.length
     end
 
     def test_stakeholders
-      stakeholders = @res['stakeholders']
+      stakeholders = @res['data']
 
       assert_instance_of Array, stakeholders
       assert_equal 5, stakeholders.size
