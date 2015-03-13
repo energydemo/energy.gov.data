@@ -1,8 +1,8 @@
 jQuery(function() {
-    var source    = jQuery('#baseball-card-template').html();
+    var source    = jQuery('#topic-template').html();
     var template  = Handlebars.compile(source);
 
-    var container = jQuery('#baseball-card-container');
+    var container = jQuery('#topics-container');
     var ajaxRequest = jQuery.ajax('data/topics.json');
 
     ajaxRequest.done(function(str) {

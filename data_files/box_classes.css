@@ -45,9 +45,21 @@ a .podTitle, a .podImage {
 }
 
 /* Since a separator is always generated after a link item by the
-baseball-card-template, there will always be a trailing
-separator. Suppress its display if it's the last child. */
+topic-template, there will always be a trailing separator. Suppress
+its display if it's the last child. */
 .podlink_separator:last-child {
     display: none;
 }
 
+section#resources-container {
+    clear:both;
+}
+
+div#stakeholders-container {
+    float: left;
+    width: 62%;
+}
+
+div#topics-container {
+    float: right;
+}
