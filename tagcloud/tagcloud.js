@@ -13,21 +13,23 @@ jQuery("document").ready(function (event) {
         0.66: '#0f0', // green
         1:    '#00f'  // blue
     };
-    TagCanvas.initial = [0.1,-0.1];
+    TagCanvas.dragControl = true;
+    TagCanvas.initial = [0.02,-0.02];
     TagCanvas.maxSpeed = 0.02;
     TagCanvas.reverse = true;
     TagCanvas.weight = true;
     TagCanvas.weightGradient = gradient;
     TagCanvas.weightFrom = 'data-weight';
     TagCanvas.weightMode = 'both';
+    TagCanvas.wheelZoom = false;
 
     // start the whole thing off with Ajax call
     ajax.done(function(rawdata) {
         var arry = rawdata.data;
         var filtered = arry.reduce(
             function(buffer, item, ii) {
-                if (item.frequency >= 10) {
-                    item.frequency = Math.pow(Math.log(item.frequency), 2.2);
+                if (item.frequency >= 20) {
+                    item.frequency = Math.pow(Math.log(item.frequency), 2.4);
                     buffer.push(item);
                 }
                 return buffer;

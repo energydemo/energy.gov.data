@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'json'
 require 'open-uri'
 
@@ -71,5 +73,5 @@ if __FILE__ == $0
       a[:text] <=> b[:text] :
       comparison
   }
-  puts JSON.pretty_generate({data: reverse_sorted})
+  puts JSON.pretty_generate({data: tag_array})
 end
