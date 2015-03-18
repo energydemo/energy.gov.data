@@ -13,15 +13,15 @@
 
   <body>
     <div id="myCanvasContainer">
-      <canvas width="640" height="480" id="myCanvas">
+      <canvas width="640" height="640" id="myCanvas">
         <p>In Internet Explorer versions up to 8, things inside the canvas are inaccessible!</p>
       </canvas>
     </div>
 
     <div>
       <script id="item-template" type="text/x-handlebars-template">
-        <li><a href="{{url}}"
-               data-weight={{frequency}}
+        <li><a data-weight={{frequency}}
+               href="http://catalog.data.gov/dataset?q=tags%3A{{tag}}+AND+organization%3Adoe-gov"
                target="_blank">{{text}}</a></li>
       </script>
 

@@ -6,13 +6,10 @@ class DataJsonIndex
   class Formatter
     def self.tagcloud(keywords)
       normalize_tag = lambda {|tag| tag.downcase.gsub(/\W/, '-') }
-      create_url = lambda {|tag|
-        "http://catalog.data.gov/dataset?tags=#{normalize_tag.(tag)}"
-      }
       keywords.map do |key, id_array|
         {
           text: key,
-          url: create_url.(key),
+          tag: normalize_tag.(key),
           frequency: id_array.size
         }
       end
@@ -62,4 +59,17 @@ class DataJsonIndex
     {identifier: ds['identifier'], title: ds['title']}
   end
 
+end
+
+
+if __FILE__ == $0
+  indexer = DataJsonIndex.new
+  keyword_hash = indexer.keywords
+  tag_array = DataJsonIndex::Formatter.tagcloud(keyword_hash)
+  reverse_sorted = tag_array.sort {|a, b|
+    (comparison = b[:frequency] <=> a[:frequency]) == 0 ?
+      a[:text] <=> b[:text] :
+      comparison
+  }
+  puts JSON.pretty_generate({data: reverse_sorted})
 end

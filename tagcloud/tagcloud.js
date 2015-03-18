@@ -13,6 +13,9 @@ jQuery("document").ready(function (event) {
         0.66: '#0f0', // green
         1:    '#00f'  // blue
     };
+    TagCanvas.initial = [0.1,-0.1];
+    TagCanvas.maxSpeed = 0.02;
+    TagCanvas.reverse = true;
     TagCanvas.weight = true;
     TagCanvas.weightGradient = gradient;
     TagCanvas.weightFrom = 'data-weight';
@@ -23,8 +26,8 @@ jQuery("document").ready(function (event) {
         var arry = rawdata.data;
         var filtered = arry.reduce(
             function(buffer, item, ii) {
-                if (item.frequency > 20) {
-                    item.frequency = Math.log(item.frequency) * 10;
+                if (item.frequency >= 10) {
+                    item.frequency = Math.pow(Math.log(item.frequency), 2.2);
                     buffer.push(item);
                 }
                 return buffer;
@@ -38,16 +41,9 @@ jQuery("document").ready(function (event) {
             container.append(rendered);
         });
 
-
         // fill tag canvas
         try {
-            TagCanvas.Start('myCanvas',
-                            'tagList',
-                            {
-                                // textColour: 'black',
-                                maxSpeed: 0.05
-                            }
-                           );
+            TagCanvas.Start('myCanvas', 'tagList');
         } catch(e) {
             // something went wrong, hide the canvas container
             // document.getElementById('myCanvasContainer').style.display = 'none';
