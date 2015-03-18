@@ -1,0 +1,5 @@
+# ignore VCR cassettes that should be updated once a day
+#
+returns_1040_datasets.yml
+returns_2778_uniq_keywords.yml
+returns_unique_identifier_for_a_dataset.yml
