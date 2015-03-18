@@ -54,6 +54,10 @@
   padding: 0 2em 1em 2em;
   }
 
+  .search_hint_item {
+  margin-left: 1em;
+  }
+
   #search_input {
   border: solid 1px gray;
   font-size: 20px;
@@ -401,7 +405,7 @@
                             <div property="content:encoded" class="field-item odd">
 
                               <section id="searchbox">
-                                <form role="search" method="get" id="searchform" action="http://catalog.data.gov/dataset" onsubmit="alert('submit'); return false;">
+                                <form role="search" method="get" id="searchform" action="//catalog.data.gov/dataset" onsubmit="alert('submit'); return false;">
 
                                   <input type="hidden" value="" id="search_output" name="q" />
 
@@ -410,9 +414,19 @@
 
                                   <div class="search_hints">
                                     Search hints:
-                                    <div>Try <em class="copyable">solar</em> to find all solar energy data.</div>
-                                    <div>Try <em class="copyable">nuclear</em> to discover all the data sets relating to nuclear energy.</div>
-                                    <div>Try <em class="copyable">wind</em> or <em class="copyable">tidal</em> or <em class="copyable">geothermal</em> to explore different forms of renewable energy.</div>
+                                    <div class="search_hint_item">Try <em class="copyable">solar</em> to find all solar energy data.</div>
+                                    <div class="search_hint_item">Try <em class="copyable">nuclear</em> to discover all the data sets relating to nuclear energy.</div>
+                                    <div class="search_hint_item">Try <em class="copyable">wind</em> or <em class="copyable">tidal</em> or <em class="copyable">geothermal</em> to explore different forms of renewable energy.</div>
+
+                                    <div class="issue_tracker">
+                                      Can't find a dataset you're
+                                      looking for, send us
+                                      a <a href="//www.data.gov/request/">suggestion</a>.
+                                    </div>
+
+                                    <div class="issue_tracker">
+                                      Having a problem with this site? Notify us on our <a href="https://github.com/energydemo/energy.gov.data/issues">issue tracker</a>.
+                                    </div>
                                   </div>
 
 	                          <input class="visuallyhidden" type="submit" id="searchsubmit" value="Search" class="button">
@@ -545,15 +559,7 @@
 
                                     In pursuit of its mission, DOE has generated, collected and compiled large amount of digitized data that has helped us better understand America's energy, environmental, and nuclear challenges.</p>
 
-                                  <h5 class="heading">Who can use this data?</h5>
-
-                                  <h5 class="heading">Terms of Use</h5>
-
-                                  <h6><subheading>You</subheading></h6>
-                                  <p>How can the DOE serve the American public? To let us know how you are using DOE data, or ask us where to find the data you need, please log an issue on our <a href="https://github.com/energydemo/energy.gov.data/issues">issue tracker</a>.</p>
-
                                   <div id="policy_subsection">
-                                    <p><hr /></p>
 
                                     <h5 class="heading">The origins of Open Data at DOE</h5>
 
