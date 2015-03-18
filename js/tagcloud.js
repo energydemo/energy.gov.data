@@ -8,7 +8,7 @@ jQuery("document").ready(function (event) {
     var template2d  = Handlebars.compile(source2d);
     var container2d = jQuery('#tags2dContainer');
 
-    var ajax = jQuery.ajax('keyword_counts.json', {dataType: "json"});
+    var ajax = jQuery.ajax('data/tagcloud.json', {dataType: "json"});
 
     // configuration
     var gradient = {
@@ -60,7 +60,7 @@ jQuery("document").ready(function (event) {
         jQuery.each(arry, function(ii, item) {
             var rendered;
 
-            item.fontsize = item.frequency / 19;
+            item.fontsize = 1 + item.frequency / 13;
             rendered = template2d(item);
             container2d.append(rendered);
         });

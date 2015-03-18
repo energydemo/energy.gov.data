@@ -425,9 +425,19 @@
                                   <li><a href="#about" class="update_hist">About</a></li>
                                   <li><a href="#news" class="update_hist">News</a></li>
                                   <li><a href="#calendar" class="update_hist">Calendar</a></li>
+                                  <li><a href="#keywords" class="update_hist">Keywords</a></li>
                                 </ul>
 
                                 <div class="tabs-divider"></div>
+
+                                <script type="text/javascript">
+                                  jQuery("document").ready(function (event) {
+                                      jQuery("#keywords").load("partials/tagcloud_core.html");
+                                  });
+                                </script>
+
+                                <section id="keywords">
+                                </section>
 
                                 <section id="news">
 
