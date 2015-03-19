@@ -6,7 +6,7 @@
         {
           "description": "Get your energy usage data from your local utility",
           "linktext": "Green Button Energy Usage Data",
-          "linkurl": "https://cms.doe.gov/data/green-button"
+          "linkurl": "http://energy.gov/data/green-button"
         },
         {
           "description": "Discover your vehicle's fuel economy",

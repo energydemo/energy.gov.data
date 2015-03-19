@@ -81,7 +81,7 @@ elsif __FILE__ == $0 && 0 == ARGV.length
       lnk = links[0]
       assert_equal 'Get your energy usage data from your local utility', lnk['description']
       assert_equal 'Green Button Energy Usage Data', lnk['linktext']
-      assert_equal 'https://cms.doe.gov/data/green-button', lnk['linkurl']
+      assert_equal 'http://energy.gov/data/green-button', lnk['linkurl']
 
       lnk = links[4]
       assert_equal 'Find out if your state offers energy efficiency incentives',
