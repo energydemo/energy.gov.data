@@ -9,7 +9,8 @@ class DoeArticleSearch
   # return array of search results
   #
   def search(phrases)
-    phrases.collect {|phr| self.search_category(phr) }
+    threads = phrases.map {|ph| Thread.new { self.search_category(ph) }}
+    array   = threads.map {|th| th.value }
   end
 
   # return hash of {category:String, links:Array}
