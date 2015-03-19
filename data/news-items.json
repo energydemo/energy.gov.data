@@ -1,60 +1,90 @@
 {
   "data": [
     {
-      "category": "AMERICAN ENERGY DATA CHALLENGE",
+      "category": "American Energy Data Challenge",
       "links": [
         {
-          "description": null,
-          "linktext": "Secretary Moniz launches the American Energy Data Challenge",
-          "linkurl": "http://www.energy.gov/videos/secretary-moniz-launches-american-energy-data-challenge"
+          "linktext": "Second Round of American Energy Data Challenge Winners Announced",
+          "linkurl": "http://www.energy.gov/data/articles/second-round-american-energy-data-challenge-winners-announced"
         },
         {
-          "description": null,
+          "linktext": "Federal Register Notice of a 4-Part Competition: American Energy Data Challenge",
+          "linkurl": "http://www.energy.gov/oe/articles/federal-register-notice-4-part-competition-american-energy-data-challenge"
+        },
+        {
+          "linktext": "American Energy Data Challenge Hackathons – “Apps For Energy”: Turning Energy Data into Working Apps in 24 Hours",
+          "linkurl": "http://www.energy.gov/data/articles/american-energy-data-challenge-hackathons-apps-energy-turning-energy-data-working-apps"
+        },
+        {
           "linktext": "Join the American Energy Data Challenge",
           "linkurl": "http://www.energy.gov/articles/join-american-energy-data-challenge"
         },
         {
-          "description": null,
-          "linktext": "Second Contest of the American Energy Data Challenge to Include Events in Four Cities",
+          "linktext": "First Round of American Energy Data Challenge Winners Announced",
+          "linkurl": "http://www.energy.gov/data/articles/first-round-american-energy-data-challenge-winners-announced"
+        },
+        {
+          "linktext": "Energy Department Launches Second Contest of the American Energy Data Challenge",
+          "linkurl": "http://www.energy.gov/data/articles/energy-department-launches-second-contest-american-energy-data-challenge"
+        },
+        {
+          "linktext": "America Competes to Build the Best Energy App",
+          "linkurl": "http://www.energy.gov/data/articles/america-competes-build-best-energy-app"
+        },
+        {
+          "linktext": "Energy Department Launches Competition to Encourage the Creation of Innovative Energy Apps Built with Open Data",
           "linkurl": "http://www.energy.gov/articles/energy-department-launches-competition-encourage-creation-innovative-energy-apps-built-open"
         },
         {
-          "description": null,
-          "linktext": "Secretary Moniz's remarks, as delivered, at the 2014 Energy Datapalooza on May 28, 2014.",
-          "linkurl": "http://www.energy.gov/articles/secretary-monizs-remarks-white-house-energy-datapalooza-delivered"
+          "linktext": "Winners Announced in the Open Data by Design Contest",
+          "linkurl": "http://www.energy.gov/cio/articles/winners-announced-open-data-design-contest"
         },
         {
-          "description": null,
-          "linktext": "Open Government Plan 3.0",
-          "linkurl": "http://www.energy.gov/downloads/open-government-plan-30"
+          "linktext": "Think Outside the Box During Our Open Data by Design Contest",
+          "linkurl": "http://www.energy.gov/data/articles/think-outside-box-during-our-open-data-design-contest"
         }
       ]
     },
     {
-      "category": "ENERGY DATAPALOOZAS",
+      "category": "Energy Datapaloozas",
       "links": [
         {
-          "description": null,
           "linktext": "Slideshow from the White House Energy Datapalooza",
           "linkurl": "http://www.energy.gov/articles/slideshow-white-house-energy-datapalooza"
         },
         {
-          "description": null,
+          "linktext": "Secretary Moniz's Remarks at the White House Energy Datapalooza-- As Delivered",
+          "linkurl": "http://www.energy.gov/articles/secretary-monizs-remarks-white-house-energy-datapalooza-delivered"
+        },
+        {
+          "linktext": "Energy Datapalooza: Unleashing the Power of Open Data to Advance our Energy Future ",
+          "linkurl": "http://www.energy.gov/articles/energy-datapalooza-unleashing-power-open-data-advance-our-energy-future"
+        },
+        {
           "linktext": "Celebrating Innovation and Open Data at the Energy Datapalooza",
           "linkurl": "http://www.energy.gov/articles/celebrating-innovation-and-open-data-energy-datapalooza"
         },
         {
-          "description": null,
+          "linktext": "Interested in Open Energy Data? Watch the Energy Datapalooza Live!",
+          "linkurl": "http://www.energy.gov/articles/interested-open-energy-data-watch-energy-datapalooza-live"
+        },
+        {
           "linktext": "Harnessing the Power of Data, Technology and Innovation for a Clean Energy Economy",
           "linkurl": "http://www.energy.gov/articles/harnessing-power-data-technology-and-innovation-clean-energy-economy"
         },
         {
-          "description": null,
           "linktext": "Submit Your Ideas for the NY Energy Data Jam",
           "linkurl": "http://www.energy.gov/articles/submit-your-ideas-ny-energy-data-jam"
         },
         {
-          "description": null,
+          "linktext": "SLIDESHOW: The Energy Department Goes to New York Energy Week",
+          "linkurl": "http://www.energy.gov/articles/slideshow-energy-department-goes-new-york-energy-week"
+        },
+        {
+          "linktext": "White House Highlights Two Energy-Slashing, Open Data Initiatives",
+          "linkurl": "http://www.energy.gov/eere/buildings/articles/white-house-highlights-two-energy-slashing-open-data-initiatives"
+        },
+        {
           "linktext": "Putting Data to Work at New York Energy Week",
           "linkurl": "http://www.energy.gov/articles/putting-data-work-new-york-energy-week"
         }
@@ -64,14 +94,94 @@
       "category": "Energy Roundtables",
       "links": [
         {
-          "description": null,
+          "linktext": "Energy Secretary Moniz Announces New Energy Initiative and Joins Congressman Bobby Rush for Minorities in Energy Roundtable ",
+          "linkurl": "http://www.energy.gov/diversity/articles/energy-secretary-moniz-announces-new-energy-initiative-and-joins-congressman"
+        },
+        {
+          "linktext": "Energy Innovation: Green Button Initiative Empowering Americans to Save Energy and Money",
+          "linkurl": "http://www.energy.gov/eere/articles/energy-innovation-green-button-initiative-empowering-americans-save-energy-and-money"
+        },
+        {
           "linktext": "TODAY MAY 22ND: Live Tweeting the Apps for Energy Winners Announcement! ",
           "linkurl": "http://www.energy.gov/articles/today-may-22nd-live-tweeting-apps-energy-winners-announcement"
         },
         {
-          "description": null,
+          "linktext": "Secretary Jewell Announces Approval of Second Utility-Scale Solar Energy Project on American Indian Trust Land ",
+          "linkurl": "http://www.energy.gov/indianenergy/articles/secretary-jewell-announces-approval-second-utility-scale-solar-energy-project"
+        },
+        {
           "linktext": "Secretary Bodman Visits Alberta, Canada",
           "linkurl": "http://www.energy.gov/articles/secretary-bodman-visits-alberta-canada"
+        }
+      ]
+    },
+    {
+      "category": "Prizes and Challenges",
+      "links": [
+        {
+          "linktext": "H2 Refuel H-Prize Aims to Make Fueling Hydrogen Powered Vehicles Easier than Ever ",
+          "linkurl": "http://www.energy.gov/eere/articles/h2-refuel-h-prize-aims-make-fueling-hydrogen-powered-vehicles-easier-ever"
+        },
+        {
+          "linktext": "Energy Department Announces Next Phase of L Prize® Competition to Create Innovative Energy-Saving Lighting Products",
+          "linkurl": "http://www.energy.gov/articles/energy-department-announces-next-phase-l-prize-competition-create-innovative-energy-saving"
+        },
+        {
+          "linktext": "SunShot Catalyst: New Prize Challenge Aims to Accelerate Solar Solutions ",
+          "linkurl": "http://www.energy.gov/eere/articles/sunshot-catalyst-new-prize-challenge-aims-accelerate-solar-solutions"
+        },
+        {
+          "linktext": "Earth Week 2014: Energy Department Highlights Ways Americans #ActOnClimate",
+          "linkurl": "http://www.energy.gov/articles/earth-week-2014-energy-department-highlights-ways-americans-actonclimate"
+        },
+        {
+          "linktext": "A Winning Light Bulb With the Potential to Save the Nation Billions",
+          "linkurl": "http://www.energy.gov/articles/winning-light-bulb-potential-save-nation-billions"
+        }
+      ]
+    },
+    {
+      "category": "High Performance Computing",
+      "links": [
+        {
+          "linktext": "National Lab Day: How the National Labs Keep Moving America Forward",
+          "linkurl": "http://www.energy.gov/articles/national-lab-day-how-national-labs-keep-moving-america-forward-0"
+        },
+        {
+          "linktext": "OCIO Technology Summit: High Performance Computing",
+          "linkurl": "http://www.energy.gov/cio/articles/ocio-technology-summit-high-performance-computing"
+        },
+        {
+          "linktext": "Simulation and High-Performance Computing",
+          "linkurl": "http://www.energy.gov/articles/simulation-and-high-performance-computing"
+        },
+        {
+          "linktext": "High School Students Build Their Own Supercomputer (Almost)",
+          "linkurl": "http://www.energy.gov/articles/high-school-students-build-their-own-supercomputer-almost"
+        },
+        {
+          "linktext": "August 18, 2014 SEAB Meeting",
+          "linkurl": "http://www.energy.gov/seab/articles/august-18-2014-seab-meeting"
+        },
+        {
+          "linktext": "December 3, 2013 SEAB Meeting",
+          "linkurl": "http://www.energy.gov/seab/articles/december-3-2013-seab-meeting"
+        },
+        {
+          "linktext": "10 Questions for a Scientist: Erich Strohmaier",
+          "linkurl": "http://www.energy.gov/articles/10-questions-scientist-erich-strohmaier"
+        },
+        {
+          "linktext": "INFOGRAPHIC: Everything You Need to Know About Supercomputers",
+          "linkurl": "http://www.energy.gov/articles/infographic-everything-you-need-know-about-supercomputers"
+        },
+        {
+          "linktext": "Women @ Energy: Terri Quinn",
+          "linkurl": "http://www.energy.gov/diversity/articles/women-energy-terri-quinn"
+        },
+        {
+          "linktext": "Lab Breakthrough: Supercomputing Power to Accelerate Fossil Energy Research",
+          "linkurl": "http://www.energy.gov/articles/lab-breakthrough-supercomputing-power-accelerate-fossil-energy-research"
         }
       ]
     },
@@ -79,39 +189,16 @@
       "category": "Data Blog",
       "links": [
         {
-          "description": null,
-          "linktext": "Think Outside the Box During Our Open Data by Design Contest",
-          "linkurl": "//www.energy.gov/data/articles/think-outside-box-during-our-open-data-design-contest"
+          "linktext": "Putting Data to Work at New York Energy Week",
+          "linkurl": "http://www.energy.gov/articles/putting-data-work-new-york-energy-week"
         },
         {
-          "description": null,
-          "linktext": "Slideshow from the White House Energy Datapalooza",
-          "linkurl": "//www.energy.gov/articles/slideshow-white-house-energy-datapalooza"
+          "linktext": "Who Uses Open Data?",
+          "linkurl": "http://www.energy.gov/data/articles/who-uses-open-data"
         },
         {
-          "description": null,
-          "linktext": "Second Round of American Energy Data Challenge Winners Announced",
-          "linkurl": "//www.energy.gov/data/articles/second-round-american-energy-data-challenge-winners-announced"
-        },
-        {
-          "description": null,
-          "linktext": "We're Data Jammin': Building Interactive Educational Materials to Teach Energy",
-          "linkurl": "//www.energy.gov/eere/articles/were-data-jammin-building-interactive-educational-materials-teach-energy"
-        },
-        {
-          "description": null,
-          "linktext": "Jamming Out to Energy Data: Building Apps That Improve Energy Literacy",
-          "linkurl": "//www.energy.gov/eere/articles/jamming-out-energy-data-building-apps-improve-energy-literacy"
-        },
-        {
-          "description": null,
-          "linktext": "American Energy Data Challenge Hackathons - Apps For Energy: Turning Energy Data into Working Apps in 24 Hours",
-          "linkurl": "//www.energy.gov/data/articles/american-energy-data-challenge-hackathons-apps-energy-turning-energy-data-working-apps"
-        },
-        {
-          "description": null,
-          "linktext": "Energy Department Launches Second Contest of the American Energy Data Challenge",
-          "linkurl": "http://localhost:8000/data/articles/energy-department-launches-second-contest-american-energy-data-challenge"
+          "linktext": "Jamming Out to Energy Data: Building Apps That Improve Energy Literacy ",
+          "linkurl": "http://www.energy.gov/eere/articles/jamming-out-energy-data-building-apps-improve-energy-literacy"
         }
       ]
     }

@@ -12,6 +12,7 @@ GEM
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
+    mini_portile (0.6.2)
     minispec-metadata (2.0.0)
       minitest
     minitest (5.5.1)
@@ -19,6 +20,8 @@ GEM
       minispec-metadata (~> 2.0)
       minitest (>= 4.7.5)
       vcr (~> 2.9)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -37,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   minitest-vcr
+  nokogiri
   rerun
   vcr
   webmock

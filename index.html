@@ -467,7 +467,9 @@
                                         <div class="node node-article node-block-title-only node-919931 clearfix"
                                              about="{{linkurl}}" typeof="sioc:Item foaf:Document">
                                           <div class="content">
-                                            <a href="{{linkurl}}" class="title-link"><span>{{linktext}}</span></a>
+                                            <a href="{{linkurl}}"
+                                               class="title-link"
+                                               target="_blank"><span>{{linktext}}</span></a>
                                           </div>
                                         </div>
                                         {{/each}}
@@ -525,7 +527,7 @@
                                               {{#if description}}
                                                 {{description}} -
                                               {{/if}}
-                                              <a href="{{linkurl}}">{{linktext}}</a>
+                                              <a href="{{linkurl}}" target="_blank">{{linktext}}</a>
                                             </li>
                                             {{/each}}
                                           </ul>
@@ -545,7 +547,7 @@
                                         <img class="podImage" src="{{image}}" />
                                         <div class="subpodLinks">
                                           {{#each links}}
-                                          <a class="exampleLink" href="{{url}}">{{text}}</a>
+                                          <a class="exampleLink" href="{{url}}" target="_blank">{{text}}</a>
                                           <span class="podlink_separator">&middot;</span>
                                           {{/each}}
                                         </div>
