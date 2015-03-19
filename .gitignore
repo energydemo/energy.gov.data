@@ -4,6 +4,10 @@ returns_1040_datasets.yml
 returns_2778_uniq_keywords.yml
 returns_unique_identifier_for_a_dataset.yml
 
+# ignore Mac background files
+#
+.DS_Store
+
 # ignore RubyMine IDE config directory
 #
 .idea
