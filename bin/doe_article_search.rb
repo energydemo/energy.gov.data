@@ -5,6 +5,11 @@ require 'nokogiri'
 require 'open-uri'
 
 class DoeArticleSearch
+  # return search result of phrases as JSON string
+  #
+  def generate_search_json(phrases)
+    JSON.pretty_generate( { data: self.search(phrases) } )
+  end
 
   # return array of search results
   #
@@ -50,6 +55,5 @@ end
 
 if __FILE__ == $0
   search = DoeArticleSearch.new
-  result = search.search ARGV
-  puts JSON.pretty_generate({data: result})
+  puts search.generate_search_json ARGV
 end
