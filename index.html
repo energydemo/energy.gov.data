@@ -405,7 +405,7 @@
                             <div property="content:encoded" class="field-item odd">
 
                               <section id="searchbox">
-                                <form role="search" method="get" id="searchform" action="//catalog.data.gov/dataset" onsubmit="alert('submit'); return false;">
+                                <form role="search" method="get" id="searchform" action="//catalog.data.gov/dataset" onsubmit="alert('submit'); return false;" target="_blank">
 
                                   <input type="hidden" value="" id="search_output" name="q" />
 
@@ -704,7 +704,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 
 <script type="text/javascript">
     var fnAppendArgs = function() {
-        var additionalArgs = '(organization:eia-doe-gov OR organization:doe-gov OR organization:osti-gov)';
+        var additionalArgs = 'organization:doe-gov';
         var txtIn = document.getElementById ('search_input');
         var txtOut = document.getElementById ('search_output');
 
