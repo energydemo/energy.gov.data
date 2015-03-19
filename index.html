@@ -454,99 +454,28 @@
                                 </section>
 
                                 <section id="news">
+                                  <style media="all">
+                                    .news-category .block-title { margin: 1.5em 0 1em 0; }
+                                  </style>
 
-                                  <h4 class="block-title">American Energy Data Challenge</h4>
-                                  <p><!-- placeholder --></p>
+                                  <script id="news-item-template" type="text/x-handlebars-template">
+                                    <div class="news-category">
+                                      <h4 class="block-title">{{category}}</h4>
 
-                                  <h4 class="block-title">Energy Datapaloozas</h4>
-                                  <p><!-- placeholder --></p>
-
-                                  <h4 class="block-title">Energy Roundtables</h4>
-                                  <p><!-- placeholder --></p>
-
-                                  <h4 class="block-title">Presidential Innovation Fellows</h4>
-                                  <p><!-- placeholder --></p>
-
-                                  <h4 class="block-title">Prize Community</h4>
-                                  <p><!-- placeholder --></p>
-
-                                  <h4 class="block-title">High Performance Computing</h4>
-                                  <p><!-- placeholder --></p>
-
-                                  <h4 class="block-title">Data Blog</h4>
-                                  <p><!-- placeholder --></p>
-
-                                  <div class="content">
-                                    <div class="node node-article node-block-title-only node-919931 clearfix" about="/data/articles/think-outside-box-during-our-open-data-design-contest" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/data/articles/think-outside-box-during-our-open-data-design-contest" class="title-link"><span>Think Outside the Box During Our Open Data by Design Contest</span></a>  </div>
-
-                                      
-                                      
+                                      <div class="content news-items-wrapper">
+                                        {{#each links}}
+                                        <div class="node node-article node-block-title-only node-919931 clearfix"
+                                             about="{{linkurl}}" typeof="sioc:Item foaf:Document">
+                                          <div class="content">
+                                            <a href="{{linkurl}}" class="title-link"><span>{{linktext}}</span></a>
+                                          </div>
+                                        </div>
+                                        {{/each}}
+                                      </div>
                                     </div>
-                                    <div class="node node-article node-block-title-only node-917566 clearfix" about="/articles/slideshow-white-house-energy-datapalooza" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/articles/slideshow-white-house-energy-datapalooza" class="title-link"><span>Slideshow from the White House Energy Datapalooza</span></a>  </div>
+                                  </script>
 
-                                      
-                                      
-                                    </div>
-                                    <div class="node node-article node-block-title-only node-906571 clearfix" about="/data/articles/second-round-american-energy-data-challenge-winners-announced" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/data/articles/second-round-american-energy-data-challenge-winners-announced" class="title-link"><span>Second Round of American Energy Data Challenge Winners Announced</span></a>  </div>
-
-                                      
-                                      
-                                    </div>
-                                    <div class="node node-article node-block-title-only node-899626 clearfix" about="/eere/articles/were-data-jammin-building-interactive-educational-materials-teach-energy" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/eere/articles/were-data-jammin-building-interactive-educational-materials-teach-energy" class="title-link"><span>We're Data Jammin': Building Interactive Educational Materials to Teach Energy</span></a>  </div>
-
-                                      
-                                      
-                                    </div>
-                                    <div class="node node-article node-block-title-only node-851321 clearfix" about="/eere/articles/jamming-out-energy-data-building-apps-improve-energy-literacy" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/eere/articles/jamming-out-energy-data-building-apps-improve-energy-literacy" class="title-link"><span>Jamming Out to Energy Data: Building Apps That Improve Energy Literacy  </span></a>  </div>
-
-                                      
-                                      
-                                    </div>
-                                    <div class="node node-article node-block-title-only node-801236 clearfix" about="/data/articles/american-energy-data-challenge-hackathons-apps-energy-turning-energy-data-working-apps" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/data/articles/american-energy-data-challenge-hackathons-apps-energy-turning-energy-data-working-apps" class="title-link"><span>American Energy Data Challenge Hackathons – “Apps For Energy”: Turning Energy Data into Working Apps in 24 Hours</span></a>  </div>
-
-                                      
-                                      
-                                    </div>
-                                    <div class="node node-article node-block-title-only node-789646 clearfix" about="/data/articles/energy-department-launches-second-contest-american-energy-data-challenge" typeof="sioc:Item foaf:Document">
-                                      
-                                      
-                                      
-                                      <div class="content">
-                                        <a href="/data/articles/energy-department-launches-second-contest-american-energy-data-challenge" class="title-link"><span>Energy Department Launches Second Contest of the American Energy Data Challenge</span></a>  </div>
-
-                                      
-                                      
-                                    </div>
+                                  <div id="news-items-container">
                                   </div>
                                 </section>
 

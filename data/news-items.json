@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "category": "AMERICAN ENERGY DATA CHALLENGE",
+      "links": [
+        {
+          "description": null,
+          "linktext": "Secretary Moniz launches the American Energy Data Challenge",
+          "linkurl": "http://www.energy.gov/videos/secretary-moniz-launches-american-energy-data-challenge"
+        },
+        {
+          "description": null,
+          "linktext": "Join the American Energy Data Challenge",
+          "linkurl": "http://www.energy.gov/articles/join-american-energy-data-challenge"
+        },
+        {
+          "description": null,
+          "linktext": "Second Contest of the American Energy Data Challenge to Include Events in Four Cities",
+          "linkurl": "http://www.energy.gov/articles/energy-department-launches-competition-encourage-creation-innovative-energy-apps-built-open"
+        },
+        {
+          "description": null,
+          "linktext": "Secretary Moniz's remarks, as delivered, at the 2014 Energy Datapalooza on May 28, 2014.",
+          "linkurl": "http://www.energy.gov/articles/secretary-monizs-remarks-white-house-energy-datapalooza-delivered"
+        },
+        {
+          "description": null,
+          "linktext": "Open Government Plan 3.0",
+          "linkurl": "http://www.energy.gov/downloads/open-government-plan-30"
+        }
+      ]
+    },
+    {
+      "category": "ENERGY DATAPALOOZAS",
+      "links": [
+        {
+          "description": null,
+          "linktext": "Slideshow from the White House Energy Datapalooza",
+          "linkurl": "http://www.energy.gov/articles/slideshow-white-house-energy-datapalooza"
+        },
+        {
+          "description": null,
+          "linktext": "Celebrating Innovation and Open Data at the Energy Datapalooza",
+          "linkurl": "http://www.energy.gov/articles/celebrating-innovation-and-open-data-energy-datapalooza"
+        },
+        {
+          "description": null,
+          "linktext": "Harnessing the Power of Data, Technology and Innovation for a Clean Energy Economy",
+          "linkurl": "http://www.energy.gov/articles/harnessing-power-data-technology-and-innovation-clean-energy-economy"
+        },
+        {
+          "description": null,
+          "linktext": "Submit Your Ideas for the NY Energy Data Jam",
+          "linkurl": "http://www.energy.gov/articles/submit-your-ideas-ny-energy-data-jam"
+        },
+        {
+          "description": null,
+          "linktext": "Putting Data to Work at New York Energy Week",
+          "linkurl": "http://www.energy.gov/articles/putting-data-work-new-york-energy-week"
+        }
+      ]
+    },
+    {
+      "category": "Energy Roundtables",
+      "links": [
+        {
+          "description": null,
+          "linktext": "TODAY MAY 22ND: Live Tweeting the Apps for Energy Winners Announcement! ",
+          "linkurl": "http://www.energy.gov/articles/today-may-22nd-live-tweeting-apps-energy-winners-announcement"
+        },
+        {
+          "description": null,
+          "linktext": "Secretary Bodman Visits Alberta, Canada",
+          "linkurl": "http://www.energy.gov/articles/secretary-bodman-visits-alberta-canada"
+        }
+      ]
+    },
+    {
+      "category": "Data Blog",
+      "links": [
+        {
+          "description": null,
+          "linktext": "Think Outside the Box During Our Open Data by Design Contest",
+          "linkurl": "//www.energy.gov/data/articles/think-outside-box-during-our-open-data-design-contest"
+        },
+        {
+          "description": null,
+          "linktext": "Slideshow from the White House Energy Datapalooza",
+          "linkurl": "//www.energy.gov/articles/slideshow-white-house-energy-datapalooza"
+        },
+        {
+          "description": null,
+          "linktext": "Second Round of American Energy Data Challenge Winners Announced",
+          "linkurl": "//www.energy.gov/data/articles/second-round-american-energy-data-challenge-winners-announced"
+        },
+        {
+          "description": null,
+          "linktext": "We're Data Jammin': Building Interactive Educational Materials to Teach Energy",
+          "linkurl": "//www.energy.gov/eere/articles/were-data-jammin-building-interactive-educational-materials-teach-energy"
+        },
+        {
+          "description": null,
+          "linktext": "Jamming Out to Energy Data: Building Apps That Improve Energy Literacy",
+          "linkurl": "//www.energy.gov/eere/articles/jamming-out-energy-data-building-apps-improve-energy-literacy"
+        },
+        {
+          "description": null,
+          "linktext": "American Energy Data Challenge Hackathons - Apps For Energy: Turning Energy Data into Working Apps in 24 Hours",
+          "linkurl": "//www.energy.gov/data/articles/american-energy-data-challenge-hackathons-apps-energy-turning-energy-data-working-apps"
+        },
+        {
+          "description": null,
+          "linktext": "Energy Department Launches Second Contest of the American Energy Data Challenge",
+          "linkurl": "http://localhost:8000/data/articles/energy-department-launches-second-contest-american-energy-data-challenge"
+        }
+      ]
+    }
+  ]
+}

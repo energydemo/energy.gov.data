@@ -20,4 +20,5 @@ jQuery(function() {
 
     loadTemplate('stakeholder');
     loadTemplate('topic');
+    loadTemplate('news-item');
 });
