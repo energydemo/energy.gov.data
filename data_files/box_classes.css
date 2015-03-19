@@ -19,10 +19,10 @@
 
     padding:10px 10px 10px 10px;
 
-    background-color: #ffb05a; /* for non-css3 browsers */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb05a', endColorstr='#ff8603'); /* for IE */
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb05a), to(#ff8603)); /* for webkit browsers */
-    background-image: -moz-linear-gradient(top,  #ffb05a,  #ff8603); /* for firefox 3.6+ */
+    background-color: #7dc200; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7dc200', endColorstr='#4b7800'); /* for IE */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7dc200), to(#4b7800)); /* for webkit browsers */
+    background-image: -moz-linear-gradient(top,  #7dc200,  #4b7800); /* for firefox 3.6+ */
     
     color:#ffffff;
     font-size:15px;

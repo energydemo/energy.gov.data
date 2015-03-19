@@ -61,6 +61,33 @@
           "url": "http://www.eia.gov/renewable/data.cfm#geothermal"
         }
       ]
+    },
+    {
+      "title": "Fossil Energy",
+      "image": "img/refinery.jpg",
+      "description": null,
+      "links": [
+        {
+          "text": "Drilling and Exploration",
+          "url": "http://www.eia.gov/naturalgas/data.cfm#summary"
+        },
+        {
+          "text": "Shale Gas",
+          "url": "http://www.eia.gov/coal/data.cfm#summary"
+        },
+        {
+          "text": "Enhanced Oil Recovery",
+          "url": "http://www.eia.gov/petroleum/data.cfm#summary"
+        },
+        {
+          "text": "Carbon Capture and Storage",
+          "url": "http://www.eia.gov/renewable/data.cfm#solar"
+        },
+        {
+          "text": "Liquefied Natural Gas",
+          "url": "http://www.eia.gov/renewable/data.cfm#wind"
+        }
+      ]
     }
   ]
 }

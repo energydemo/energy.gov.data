@@ -51,20 +51,20 @@
       ]
     },
     {
-      "category": "K-12 Students",
+      "category": "K-12 Students and Teachers",
       "links": [
         {
-          "description": null,
-          "linktext": "Energy Information Administration: Independent Statistics and Analysis",
-          "linkurl": "http://www.eia.gov/"
+          "description": "Learn how to measure energy used in the United States",
+          "linktext": "EIA Energy Calculators",
+          "linkurl": "http://www.eia.gov/kids/energy.cfm?page=about_energy_conversion_calculator-basics"
         },
         {
-          "description": null,
-          "linktext": "Energy.Data.Gov",
-          "linkurl": "http://energy.data.gov/"
+          "description": "Dive into an exploration of energy data",
+          "linktext": "EIA Energy Explained",
+          "linkurl": "http://www.eia.gov/energyexplained/index.cfm"
         },
         {
-          "description": null,
+          "description": "View the complete repository of DOE data",
           "linktext": "DOE Data Catalog (data.gov)",
           "linkurl": "http://catalog.data.gov/dataset?q=organization%3Aeia-doe-gov+OR+organization%3Adoe-gov+OR+organization%3Aosti-gov.gov"
         }
