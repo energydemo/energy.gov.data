@@ -65,7 +65,12 @@ end
 
 
 if __FILE__ == $0
-  indexer = DataJsonIndex.new
+  if 1 == ARGV.length
+    indexer = DataJsonIndex.new(ARGV[0])
+  else
+    indexer = DataJsonIndex.new
+  end
+
   keyword_hash = indexer.keywords
   tag_array = DataJsonIndex::Formatter.tagcloud(keyword_hash)
   reverse_sorted = tag_array.sort {|a, b|
