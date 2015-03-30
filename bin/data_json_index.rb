@@ -8,11 +8,12 @@ class DataJsonIndex
   class Formatter
     def self.tagcloud(keywords)
       normalize_tag = lambda {|tag| tag.downcase.gsub(/\W/, '-') }
-      keywords.map do |key, id_array|
+      keywords.map do |key, text_identifiers|
         {
-          text: key,
-          tag: normalize_tag.(key),
-          frequency: id_array.size
+          text: text_identifiers[:text],
+          tag: key,
+          identifiers: text_identifiers[:identifiers],
+          frequency: text_identifiers[:identifiers].size
         }
       end
     end
@@ -46,8 +47,13 @@ class DataJsonIndex
       result = Hash.new { Array.new }
 
       self.datasets.each do |uid, dataset|
-        dataset['keyword'].each do |kw|
-          result[kw] += [uid]
+        dataset['keyword'].each do |str|
+          tag = self.normalize_tag(str)
+
+          unless result.include?(tag)
+            result[tag] = {:text => str, :identifiers => []}
+          end
+          result[tag][:identifiers] += [uid]
         end
       end
 
@@ -55,6 +61,10 @@ class DataJsonIndex
     end
 
     @keywords ||= build_hash.()
+  end
+  
+  def normalize_tag(str)
+    str.downcase.gsub(/\W/, '-')
   end
 
   def unique_identifier(ds)
@@ -71,12 +81,16 @@ if __FILE__ == $0
     indexer = DataJsonIndex.new
   end
 
-  keyword_hash = indexer.keywords
-  tag_array = DataJsonIndex::Formatter.tagcloud(keyword_hash)
-  reverse_sorted = tag_array.sort {|a, b|
+  # Descending sort by frequency w/ secondary ascending sort by name.
+  # Use as argument to sort: rsorted = tag_array.sort reverse_freq
+  reverse_freq = lambda {|a, b|
     (comparison = b[:frequency] <=> a[:frequency]) == 0 ?
       a[:text] <=> b[:text] :
       comparison
   }
+
+  keyword_hash = indexer.keywords
+  tag_array = DataJsonIndex::Formatter.tagcloud(keyword_hash)
+
   puts JSON.pretty_generate({data: tag_array})
 end
