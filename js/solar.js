@@ -63,7 +63,7 @@ jQuery("document").ready(function (event) {
                 tag: t,
                 fontsize: 1 + frq/13,
                 frequency: frq,
-                weight: Math.pow(3 + Math.log(frq), 2.4)
+                weight: Math.pow(2.4 + Math.log(frq), 2.4)
             });
         }
 
