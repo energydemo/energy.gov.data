@@ -46,7 +46,9 @@ jQuery("document").ready(function (event) {
         data.result.results.map(function(res) {
             var tagnames = getTagNames(res);
             tagnames.map(function(tag) {
-                if (tags[tag]) {
+                if ('solar' == tag) {
+                    // do nothing - skip the "solar" tag
+                } else if (tags[tag]) {
                     tags[tag].push(res);
                 } else {
                     tags[tag] = [res]
@@ -56,11 +58,12 @@ jQuery("document").ready(function (event) {
 
         // cycle through has and build array
         for (var t in tags) {
+            var frq = tags[t].length;
             arry.push({
                 tag: t,
-                frequency: tags[t].length,
-                weight: Math.pow(2 + Math.log(tags[t].length),
-                                 2.4)
+                fontsize: 1 + frq/13,
+                frequency: frq,
+                weight: Math.pow(3 + Math.log(frq), 2.4)
             });
         }
 
@@ -91,10 +94,7 @@ jQuery("document").ready(function (event) {
 
         // render list items
         jQuery.each(arry, function(ii, item) {
-            var rendered;
-
-            item.fontsize = 1 + item.frequency / 13;
-            rendered = template2d(item);
+            var rendered = template2d(item);
             container2d.append(rendered);
         });
     });
