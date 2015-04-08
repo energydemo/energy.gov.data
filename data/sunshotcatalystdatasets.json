@@ -40,7 +40,7 @@
       "name": "Rooftop Solar Challenge (RSC) Database",
       "url": "https://catalog.data.gov/dataset/rooftop-solar-challenge-rsc-database",
       "query": "rooftop+solar+challenge+database+tags:solar",
-      "description": "The Solar Metrics Online Portal collects data from teams participating in the Rooftop Solar Challenge (RSC II). The data is collected from each jurisdiction on a team over three time periods (past, present, and future). The data collected is used to calculate a team’s market maturity using the Solar Market Maturity Model (SM3). The SM3 is organized around four Action Areas: Permitting and Interconnection; Financing; Planning and Zoning; and Net Metering and Interconnection Standards. Each team’s data is translated into a score with a maximum of 1000."
+      "description": "The Solar Metrics Online Portal collects data from teams participating in the Rooftop Solar Challenge (RSC II). The data is collected from each jurisdiction on a team over three time periods (past, present, and future). The data collected is used to calculate a team's market maturity using the Solar Market Maturity Model (SM3). The SM3 is organized around four Action Areas: Permitting and Interconnection; Financing; Planning and Zoning; and Net Metering and Interconnection Standards. Each team's data is translated into a score with a maximum of 1000."
     },
     {
       "name": "Cost of Renewable Energy Spreadsheet Tool (CREST)",
