@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "name": "PVWatts",
+      "url": "http://pvwatts.nrel.gov/",
+      "query": "pvwatts+tags:solar",
+      "description": "Estimates the energy production and cost of energy of grid-connected photovoltaic (PV) energy systems throughout the world. It allows homeowners, small building owners, installers and manufacturers to easily develop estimates of the performance of potential PV installations."
+    },
+    {
+      "name": "System Advisor Model (SAM)",
+      "url": "http://sam.nrel.gov/",
+      "query": "system+advisor+model+tags:solar",
+      "description": "The System Advisor Model (SAM) is a performance and financial model designed to facilitate decision making for people involved in the renewable energy industry. SAM makes performance predictions and cost of energy estimates for grid-connected power projects based on installation and operating costs and system design parameters that you specify as inputs to the model. Projects can be either on the customer side of the utility meter, buying and selling electricity at retail rates, or on the utility side of the meter, selling electricity at a price negotiated through a power purchase agreement (PPA)."
+    },
+    {
+      "name": "Open Energy Information (OpenEI) Utility Rate Database (URDB)",
+      "url": "http://en.openei.org/wiki/Utility_Rate_Database",
+      "query": "utility+rate+database",
+      "description": "The Utility Rate Database (URDB) is a free storehouse of rate structure information from utilities in the United States. Here, you can search for your utilities and rates to find out exactly how you are charged for your electric energy usage. Understanding this information can help reduce your bill, for example, by running your appliances during off-peak hours (times during the day when electricity prices are less expensive) and help you make more informed decisions regarding your energy usage."
+    },
+    {
+      "name": "Utility Rate Database API",
+      "url": "http://en.openei.org/services/doc/rest",
+      "query": "utility+rate+database+api",
+      "description": "APIs for requesting Utility Rates and Utility Company Data"
+    },
+    {
+      "name": "PV Jobs and Economic Development Impact (JEDI)",
+      "url": "http://www.nrel.gov/analysis/jedi/",
+      "query": "Jobs+Economic+Development+Impact",
+      "description": "The Jobs and Economic Development Impact (JEDI) models are user-friendly tools that estimate the economic impacts of constructing and operating power generation and biofuel plants at the local and state levels. First developed by NREL’s WINDExchange program to model wind energy impacts, JEDI has been expanded to analyze biofuels, coal, concentrating solar power, geothermal, marine and hydrokinetic power, natural gas, and photovoltaic power plants."
+    },
+    {
+      "name": "The Open PV Project",
+      "url": "http://openpv.nrel.gov/",
+      "query": "open+pv+project+tags:solar",
+      "description": "The Open PV Project is a collaborative effort between government, industry, and the public that is compiling a comprehensive database of photovoltaic (PV) installation data for the United States. Data for the project are voluntarily contributed from a variety of sources including utilities, installers, and the general public. The data collected is actively maintained by the contributors and are always changing to provide an evolving, up-to-date snapshot of the US solar power market."
+    },
+    {
+      "name": "Rooftop Solar Challenge (RSC) Database",
+      "url": "https://catalog.data.gov/dataset/rooftop-solar-challenge-rsc-database",
+      "query": "rooftop+solar+challenge+database+tags:solar",
+      "description": "The Solar Metrics Online Portal collects data from teams participating in the Rooftop Solar Challenge (RSC II). The data is collected from each jurisdiction on a team over three time periods (past, present, and future). The data collected is used to calculate a team’s market maturity using the Solar Market Maturity Model (SM3). The SM3 is organized around four Action Areas: Permitting and Interconnection; Financing; Planning and Zoning; and Net Metering and Interconnection Standards. Each team’s data is translated into a score with a maximum of 1000."
+    },
+    {
+      "name": "Cost of Renewable Energy Spreadsheet Tool (CREST)",
+      "url": "https://catalog.data.gov/dataset/cost-of-renewable-energy-spreadsheet-tool-crest",
+      "query": "CREST+tags:solar",
+      "description": "CREST is an economic cash flow model designed to allow policymakers, regulators, and the renewable energy community to assess project economics, design cost-based incentives (e.g., feed-in tariffs), and evaluate the impact of various state and federal support structures. CREST is a suite of four analytic tools, for solar (photovoltaic and solar thermal), wind, geothermal, and anaerobic digestion technologies. It is also used by project managers to do preliminary back-of-the-envelope calculations of the year one cost of energy for renewable energy projects."
+    },
+    {
+      "name": "Solar Energy Environmental Mapper",
+      "url": "https://catalog.data.gov/dataset/solar-energy-environmental-mapper",
+      "query": "Solar+Energy+Environmental+Mapper+tags:solar",
+      "description": "The Solar Energy Environmental Mapper is a web-based application that displays environmental data for the southwest U.S. in the context of utility-scale solar energy development. It provides access to screening-level data about resources and constraints, with analysis tools to help improve siting decisions."
+    },
+    {
+      "name": "Solar Roadmap",
+      "url": "http://www.solarroadmap.com/",
+      "query": null,
+      "description": "The Solar Roadmap organizes national best practices and makes them easily accessible for government agencies, regional organizations, residents, businesses and electric utilities in an interactive platform.&nbsp; Communities who use the Solar Roadmap drive economic growth and environmental improvements through actionable steps to increase cost-effective installation of solar systems."
+    },
+    {
+      "name": "Solar Prospector",
+      "url": "http://maps.nrel.gov/prospector",
+      "query": null,
+      "description": "The Solar Prospector is a mapping and analysis tool designed to provide access to geospatial data relevant to the solar industry in general and for the siting of utility-scale solar plants in particular. The application provides easy access to solar resource, land ownership, environmental, administrative and infrastructural data to help assess solar development potential within the United States. The Solar Prospector also provides the ability for users to download solar resource data in a variety of formats for further exploration and analysis."
+    },
+    {
+      "name": "Database of State Incentives for Renewables & Efficiency",
+      "url": "http://www.dsireusa.org/",
+      "query": null,
+      "description": "DSIRE is the most comprehensive source of information on incentives and policies that support renewables and energy efficiency in the United States. Established in 1995, DSIRE is operated by the N.C. Clean Energy Technology Center at N.C. State University and is funded by the U.S. Department of Energy."
+    },
+    {
+      "name": "Green Button Data",
+      "url": "https://services.greenbuttondata.org/sample-data-new.html",
+      "query": null,
+      "description": "A set of RESTful API methods and an XML data standard allowing consumers to access their energy usage data and securely share that data with third-party web and mobile apps. Today, 48 utilities and electricity suppliers have committed to enable their customers with \"Green Button\" access. Over 42 million household and business customers already have access to their Green Button energy data."
+    },
+    {
+      "name": "Energy Information Administration API",
+      "url": "http://energychallenge.energy.gov/a/pages/featured-inputs",
+      "query": null,
+      "description": "List of API and resources used for other Dept. of Energy (energy.gov) Hackathons."
+    }
+  ]
+}
